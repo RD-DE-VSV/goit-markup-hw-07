@@ -350,13 +350,28 @@ img {
   background-clip: border-box;
 }
 .hero-title {
-  max-width: 496px;
-  margin: 0 auto 48px auto;
+  max-width: 320px;
+  margin: 0 auto 72px auto;
 
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--color-txt-white);
 }
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 496px;
+    margin: 0 auto 36px auto;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    margin: 0 auto 48px auto;
+  }
+}
+
 .hero-btn {
   display: block;
   min-width: 169px;
