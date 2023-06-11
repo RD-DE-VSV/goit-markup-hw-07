@@ -28,7 +28,7 @@
   --fount-secondary: Raleway, sans-serif;
   /* Others var */
   --indent: 24px;
-  --item: 4;
+  --item: 1;
   --modal-idx: 10;
   --anim-base: 250ms;
   --anim-timing: cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,9 +195,20 @@ img {
   flex-wrap: wrap;
   gap: var(--indent);
 }
+@media only screen and (min-width: 768px) {
+  .card-set {
+    --item: 2;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .card-set {
+    --item: 4;
+  }
+}
 .card-set-item {
   width: calc((100% - (var(--indent) * (var(--item) - 1))) / var(--item));
 }
+
 /* 
   |==========================================================
   | Header styles
