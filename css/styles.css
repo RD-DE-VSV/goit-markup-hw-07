@@ -686,8 +686,16 @@ img {
 .footer-subscribe-form {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
+@media only screen and (min-width: 768px) {
+  .footer-subscribe-form {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
+
 .footer-subscribe-label {
   cursor: pointer;
 }
