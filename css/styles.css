@@ -1182,8 +1182,9 @@ img {
 
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  /* height: 100vh; */
   padding: 80px 35px 40px 40px;
   background-color: var(--color-bg-white);
   z-index: 999;
