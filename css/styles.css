@@ -399,15 +399,20 @@ img {
 } 
 */
 .features-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
+  display: none;
+}
+@media only screen and (min-width: 1158px) {
+  .features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
 
-  background: var(--color-bg-cloud);
-  border-radius: 4px;
+    background: var(--color-bg-cloud);
+    border-radius: 4px;
+  }
 }
 /* 
 .features-svg {
