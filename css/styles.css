@@ -353,8 +353,8 @@ img {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 
   background-color: var(--color-bg-navy-blue);
   background-image: linear-gradient(
@@ -366,6 +366,12 @@ img {
   background-position: center;
   background-size: cover;
   background-clip: border-box;
+}
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 }
 @media only screen and (max-width: 428px) {
   .hero {
@@ -802,9 +808,10 @@ img {
 
 .footer-subscribe-label {
   cursor: pointer;
+  width: 100%;
 }
 .footer-subscribe-input {
-  width: 398px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
 
